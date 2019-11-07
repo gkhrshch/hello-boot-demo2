@@ -35,8 +35,8 @@ public class BookController {
     }
 
     @PostMapping
-    public void add(Book book) {
-        bookService.save(book);
+    public void add(BookDto bookDto) {
+        bookService.save(BookDtoUtil.bookFromDto(bookDto));
     }
 
     @DeleteMapping("/{bookId}")

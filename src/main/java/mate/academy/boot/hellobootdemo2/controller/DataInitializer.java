@@ -17,5 +17,4 @@ public class DataInitializer {
         bookRepository.save(new Book("111", 1.11, 2));
         bookRepository.save(new Book("121", 1.23, 3));
     }
-
 }
